@@ -182,8 +182,8 @@ workflows:
   version: 2
   test-all:
     jobs:
-      - test_regression_model
       - train_and_upload_regression_model
+      - test_regression_model
       - section_9_differential_tests
       - test_ml_api:
           requires:
