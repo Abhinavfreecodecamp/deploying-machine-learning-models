@@ -56,7 +56,7 @@ jobs:
           command: |
             python3 -m venv venv
             . venv/bin/activate
-            pip install --upgrade pip==19.1==19.1
+            pip install --upgrade pip==19.1
             pip install -r packages/ml_api/requirements.txt
             py.test -vv packages/ml_api/tests -m "not differential"
       - save_cache:
