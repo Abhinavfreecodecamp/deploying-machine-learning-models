@@ -118,6 +118,7 @@ workflows:
   version: 2
   test-all:
     jobs:
+      - section_10_deploy_to_heroku
       - test_regression_model
       - test_ml_api
       - section_9_differential_tests
