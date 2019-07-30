@@ -16,7 +16,7 @@ prediction_app = Blueprint('prediction_app', __name__)
 def health():
     if request.method == 'GET':
         _logger.info('health status OK')
-        return 'ok'
+        return ' ok'
 
 
 @prediction_app.route('/version', methods=['GET'])
