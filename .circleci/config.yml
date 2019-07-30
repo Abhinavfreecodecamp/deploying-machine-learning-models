@@ -122,6 +122,7 @@ workflows:
       - test_ml_api
       - section_9_differential_tests
       - train_and_upload_regression_model:
+      - section_10_deploy_to_heroku
           requires:
             - test_regression_model
             - test_ml_api
